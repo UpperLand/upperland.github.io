@@ -149,6 +149,14 @@
     .box p {
       font-size: 36px;
     }
+    #status {
+      position: fixed;
+      left: 40;
+      width: 15vw;
+      height: 20vh;
+      
+      
+    }
 
     .container_basic {
       display: flex;
