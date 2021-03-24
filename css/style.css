@@ -223,6 +223,11 @@
   #discord_link:hover {
     background: rgb(239, 249, 255);
   }
+  #bottom_img {
+    max-width: 30vw;
+    
+  }
+
 
 
     @media only screen and (max-width: 800px) {
@@ -295,8 +300,13 @@
       #normas {
         width: 90%;
       }
-      #discord_link {
+      
+         #discord_link {
         width: 40%;
+      }
+      #bottom_img {
+        min-width: 90vw;
+        
       }
  
     }
