@@ -150,13 +150,33 @@
       font-size: 36px;
     }
     #status {
-      position: fixed;
-      left: 40;
-      width: 15vw;
-      height: 20vh;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 5px 5px;
+     position: fixed;
+     display: flexbox;
+     
+     right: 2%;
+      font-size: 18px;
       
-      
-    }
+      border-radius: 10px;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      }
+      #status_signal {
+        
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgb(0, 207, 0);
+        margin-right: 4px;
+      }
+      #status_color {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        color: rgb(0, 207, 0);
+      }
 
     .container_basic {
       display: flex;
@@ -248,6 +268,13 @@
         position: relative;
         height: auto;
         width: 100%;
+        max-width: 100%;
+      }
+      #status {
+        position: relative;
+        height: auto;
+        width: 100%;
+        right: 0;
         max-width: 100%;
       }
       #green_bar {
