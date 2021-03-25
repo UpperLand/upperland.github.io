@@ -273,9 +273,9 @@
       #status {
         position: relative;
         height: auto;
-        width: 100%;
+        width: 100vw;
         right: 0;
-        max-width: 100%;
+        max-width: 100vw;
       }
       #green_bar {
         width: 100vw;
