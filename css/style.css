@@ -259,6 +259,10 @@
 
 
     @media only screen and (max-width: 800px) {
+      #main {
+        overflow: hidden;
+        width: 100vw;
+      }
       #logo {
        min-height: 10vw;
         max-height: 20vw;
