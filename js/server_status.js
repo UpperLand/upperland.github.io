@@ -6,12 +6,10 @@ function getServerData() {
       //data is the JSON string
       if (info.error) {
          $('#status_color').css('color', 'red');
-         $('#status_signal').css('background-color', 'red');
          $('#status_color').html('Offline');
          return false;
       } else {
          $('#status_color').css('color', '#80ff00');
-         $('#status_signal').css('background-color', '#80ff00');
          $('#status_color').html('Online');
       }
    });

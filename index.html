@@ -5,7 +5,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="css/media/nav_icon.png">
   <title>UpperLand</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/hola.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/server_ip.js"></script>
+  <script src="js/server_status.js"></script>
 </head>
 
 <!-- Importing fonts from Google fonts -->
@@ -15,6 +17,7 @@
 <!-- Setting up a main invisible header block for positioning the header elements -->
 <header id="header1">
   <img src="https://i.ibb.co/dg9FB1f/upperlandlogo.png" id="logo">
+  <div class="box" id="status">Estado del servidor<div id="status_color"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div></div></div>
   <!-- Setting up the header container -->
   <div id="green_bar" ;>
 
@@ -23,6 +26,7 @@
       <h4>IP DEL SERVIDOR: <a href onclick="copy()" id="dirip">
           45.35.63.82:19427</a></h4>
     </div>
+    
 
     <!-- Navbar block -->
     <nav id="navbar">
