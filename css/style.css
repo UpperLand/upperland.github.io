@@ -157,6 +157,7 @@ body {
   border-radius: 10px;
   display: flexbox;
   font-size: 18px;
+  min-height: 50px;
   padding: 5px 5px;
   position: fixed;
   right: 2%;
@@ -337,10 +338,13 @@ body {
   }
   #status {
     font-size: 16px;
-    height: auto;
+    min-height: 45px;
     max-width: 100%;
     position: relative;
     right: 0;
+  }
+  .lds-ellipsis div {
+    top: 8px;
   }
   #green_bar {
     flex-direction: column;
