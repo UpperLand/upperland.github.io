@@ -1,33 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-  <!-- Importing fonts from Google fonts -->
-  <style>    
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-  </style>
   <!-- Media tag for responsible design -->
+
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="css/media/nav_icon.png">
   <title>UpperLand</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/hola.js"></script>
 </head>
-<body>
-  <!-- Setting up a Main invisible DIV container to adjust content to desktop/mobile view-->
-  <div id="main">
+
+<!-- Importing fonts from Google fonts -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  </style>
 <!-- Setting up a main invisible header block for positioning the header elements -->
 <header id="header1">
-  <img src="css/media/upperland_logo.png" id="logo">
-  <div class="box" id="status">
-    Estado del Servidor: <div id="status_color"><div id="status_signal"></div>On line</div>    
-  </div>
+  <img src="https://i.ibb.co/dg9FB1f/upperlandlogo.png" id="logo">
   <!-- Setting up the header container -->
   <div id="green_bar" ;>
+
     <!-- IP del servidor container(div) -->
     <div id="ipservidor">
       <h4>IP DEL SERVIDOR: <a href onclick="copy()" id="dirip">
           45.35.63.82:19427</a></h4>
     </div>
+
     <!-- Navbar block -->
     <nav id="navbar">
       <ul>
@@ -42,24 +38,30 @@
         <a href="#contacto" class="navlinks">
           <li>DISCORD
           </li>
-        </a>        
-          <li class="disabled">GUÍAS
+        </a>
+        <a href="#" class="navlinks">
+          <li>GUÍAS
           </li>
-        </a>        
-          <li class="disabled">MINIJUEGOS
+        </a>
+        <a href="#" class="navlinks">
+          <li>MINIJUEGOS
           </li>
-        </a>        
-          <li class="disabled">TIENDA
+        </a>
+        <a href="#" class="navlinks">
+          <li>TIENDA
           </li>
-        </a>      
+        </a>
+      
       </ul>
     </nav>
   </div>
 </header>
+
 <!-- Section Inicio -->
 <section id="home" class="mainsection">
-  <div id="intro"> Servidor No Premium de Minecraft en Español con Minijuegos, misiones y plugins.
-    ¡Trae a tus amigos y comienza la aventura!
+  <div id="intro"> Infinidad de minijuegos, misiones e increíbles plugins te
+    esperan en el impresionante mundo de UpperLand. Y todo ello ¡completamente
+    en Castellano! ¡Trae a tus amigos y comienza la aventura!
   </div>
   <div class="box">
     <p>Como entrar al servidor</p>
@@ -82,6 +84,7 @@
       </div>
     </div>
   </div>
+
 </section>
 <section id="normativa">
   <div class="title">Normativa del servidor</div>
@@ -104,8 +107,10 @@
         <li>Se permite grifear casas, zonas y en general todo lo que no esté protegido.  </li>
         <li>Prohibido dejar redstone parpadeando.</li>
         </ul>
+
     </div>
   </div>
+
 </section>
 <section id="contacto">
   <div class="title">Discord</div>
@@ -115,8 +120,4 @@
     <a href="https://discord.gg/fpxr36ZHYQ"><img src="css/media/discord_logo.png" id="discord"></a>    
     </div>
   </div>
-  <img src="css/media/bottom_img.png" id="bottom_img">
 </section>
-</div>
-</body>
-</html>
