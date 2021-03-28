@@ -5,13 +5,16 @@ function getServerData() {
    $.getJSON(url, function (info) {
       //data is the JSON string
       if (info.error) {
-         $('#status_color').css('color', 'red');
-         $('#status_color').html('Offline');
+         $('#status_text').css('color', 'red');
+         $('#status_text').html('Offline');
+         $('#players_num').html(null);
          return false;
       } else {
-         $('#status_color').css('color', '#80ff00');
-         $('#status_color').html('Online');
+         $('#status_text').css('color', '#80ff00');
+         $('#status_text').html('Online');
+         $('#players_num').html('Jugadores online: '+ info.players.online);
+         
       }
    });
 };
-setInterval(getServerData, 1000);
+setInterval(getServerData, 2000);
