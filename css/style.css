@@ -171,8 +171,20 @@ body {
   margin: 5px 0 0 0;
   padding-left: 0;
 }
-.staff_tag {
-  color: yellow;
+.owner_tag {
+  color: #60be7f;
+}
+.admin_tag {
+  color: #6FA9DE;
+}
+.mod_tag {
+  color: #C84374;
+}
+.helper_tag {
+  color:#802C00;
+}
+.honorMember_tag {
+  color: #F5CD3A;
 }
 /*Loading icon*/
 .lds-ellipsis {

@@ -1,12 +1,49 @@
-/*Staff Members list*/
-const staffMembers = ["AlexHowls", "AndreitaGamer", "Miguel", "Artuloda"];
-/*Format for STAFF tag*/
-const staffTag = "<span class='staff_tag'> (STAFF)</span>"
+
+/*Owners list*/
+const owners = ["Artuloda", "Miguel"];
+/*Admins list*/
+const admins = ["AlexHowls", "AndreitaGamer"];
+/*Mods list*/
+const mods = [];
+/*Helpers list*/
+const helpers = ["GoPeBeTa20", "TheBismarckcraft"];
+/*Honor members list*/
+const honorMembers = ["Yisus"];
+
+/*Format for Owner tag*/
+const ownerFlag = "<span class='owner_tag'> (OWNER)</span>"
+/*Format for Admin tag*/
+const adminFlag = "<span class='admin_tag'> (ADMIN)</span>"
+/*Format for Mod tag*/
+const modFlag = "<span class='mod_tag'> (MOD)</span>"
+/*Format for Helper tag*/
+const helperFlag = "<span class='helper_tag'> (HELPER)</span>"
+/*Format for Honor Member tag*/
+const honorFlag = "<span class='honor_tag'> (HONOR)</span>"
+
 /*Server PING URL*/
 const statusUrl = "https://api.minetools.eu/ping/45.35.63.82/19427";
 /*List of online players*/
 var playerList = [];
 
+/*This funtion add the rank tags to the names*/
+function rankTags() {
+   for (let y = 0; y < owners.length; y++) {
+      $('#' + owners[y]).append(ownerFlag);
+   }
+   for (let y = 0; y < admins.length; y++) {
+      $('#' + admins[y]).append(adminFlag);
+   }
+   for (let y = 0; y < mods.length; y++) {
+      $('#' + mods[y]).append(modFlag);
+   }
+   for (let y = 0; y < helpers.length; y++) {
+      $('#' + helpers[y]).append(helperFlag);
+   }
+   for (let y = 0; y < honorMembers.length; y++) {
+      $('#' + honorMembers[y]).append(honorFlag);
+   }
+}
 function getServerStatus() {
    $.getJSON(statusUrl, function (statusInfo) {
       //data is the JSON string
@@ -19,13 +56,12 @@ function getServerStatus() {
          $('#status_text').css('color', '#80ff00');
          $('#status_text').html('Online');
          $('#players_num').html('Jugadores online: ' + statusInfo.players.online);
-         var players = statusInfo.players.sample.map(player => "<li id='"+player.name+"'>"+player.name+"</li>");
+         var players = statusInfo.players.sample.map(player => "<li id='" + player.name + "'>" + player.name + "</li>");
          $('#players_list').html(players);
-         for (let y = 0; y < staffMembers.length; y++) {
-            $('#'+staffMembers[y]).append(staffTag);
-         }
+         rankTags();
       }
    });
 }
 
 setInterval(getServerStatus, 2000);
+
