@@ -4,7 +4,7 @@ const owners = ["Artuloda", "Miguel"];
 /*Admins list*/
 const admins = ["AlexHowls", "AndreitaGamer"];
 /*Mods list*/
-const mods = [];
+const mods = ["Chiara"];
 /*Helpers list*/
 const helpers = ["GoPeBeTa20", "TheBismarckcraft"];
 /*Honor members list*/
