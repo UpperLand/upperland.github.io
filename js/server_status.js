@@ -1,8 +1,8 @@
 
 /*Owners list*/
-const owners = ["Artuloda", "Miguel"];
+const owners = ["Artuloda", "miguel"];
 /*Admins list*/
-const admins = ["AlexHowls", "AndreitaGamer"];
+const admins = ["AlexHowls", "andreitagamer"];
 /*Mods list*/
 const mods = ["Chiara"];
 /*Helpers list*/
