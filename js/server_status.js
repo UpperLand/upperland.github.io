@@ -51,6 +51,7 @@ function getServerStatus() {
          $('#status_text').css('color', 'red');
          $('#status_text').html('Offline');
          $('#players_num').html(null);
+         playerList = [];
          return false;
       } else {
          $('#status_text').css('color', '#80ff00');
