@@ -11,14 +11,24 @@
   <link rel="icon" type="image/png" sizes="32x32" href="css/media/nav_icon.png">
   <title>UpperLand</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
   <script src="js/server_ip.js"></script>
+  <script src="js/updates_box.js"></script>
   <script src="js/server_status.js"></script>
 </head>
 
 <body>
   <!-- Main DIV to contain design limits-->
   <div id="main">
+   <!-- Info Pop Up window--> 
+  <div id="info_overlay"></div>
+  <div class="box" id="pop_up">Desde hoy, día 11 de Abril, 
+    el servidor permanecerá cerrado al público general de manera
+  temporal, mientras nos embarcamos en un nuevo proyecto, del cuál publicaremos
+  nuevas actualizaciones esta semana a través de la web y de nuestro canal de Discord. No os preocupéis por 
+el mapa, pues hemos realizado copias de seguridad para restaurarlo
+en el futuro. Es un placer teneros con nosotros y seguimos en contacto.
+Y no, ¡el servidor NO cierra definitivamente! =^.^= <a href="#" class="green_link" id="cerrar_pop_up">cerrar</a></div>
 <!-- Setting up a main invisible header block for positioning the header elements -->
 <header id="header1">
   <img src="https://i.ibb.co/dg9FB1f/upperlandlogo.png" id="logo">
@@ -72,7 +82,9 @@
 
 <!-- Section Inicio -->
 <section id="home" class="mainsection">
-  <div class="box" id="intro"> <span id="importante">ACTUALIZACIÓN</span>El servidor permanecerá cerrado temporalmente por tareas de mantenimiento. ¡Gracias por estar ahi!
+  <div class="box" id="intro"> <span id="importante">ACTUALIZACIÓN</span>
+    <span>El servidor permanecerá cerrado temporalmente por tareas de mantenimiento.
+       ¡Gracias por estar ahi!<a href="#" class="green_link" id="more_info">+Info</a></span>
   </div>
   <div class="box">
     <p>Como entrar al servidor</p>

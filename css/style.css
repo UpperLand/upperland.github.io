@@ -15,7 +15,6 @@ body {
   margin: 0;
 }
 
-
 #logo {
   width: 50%;
 }
@@ -31,6 +30,7 @@ body {
   transform: translate(-50%);
   width: 100%;
 }
+
 #green_bar {
   /*Header container */
   align-items: center;
@@ -118,18 +118,35 @@ body {
   text-align: center;
   width: 100%;
 }
-@keyframes warning_border{
-  0% {border: solid yellow;}
-  25% {border: solid red;}
-  25.05% {border: solid  red;}
-  100% {border: solid  yellow;}
+
+@keyframes warning_border {
+  0% {
+    border: solid yellow;
+  }
+  25% {
+    border: solid red;
+  }
+  25.05% {
+    border: solid red;
+  }
+  100% {
+    border: solid yellow;
+  }
 }
 
-@keyframes warning_color{
-  0% {color: yellow;}
-  25% {color: red;}
-  25.05% {color:  red;}
-  100% {color:  yellow;}
+@keyframes warning_color {
+  0% {
+    color: yellow;
+  }
+  25% {
+    color: red;
+  }
+  25.05% {
+    color: red;
+  }
+  100% {
+    color: yellow;
+  }
 }
 
 #intro {
@@ -148,15 +165,53 @@ body {
   width: 50vw;
   text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.62);
 }
+
+#intro h3 {
+  font-size: 32px;
+}
+
 #importante {
   animation-name: warning_color;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   color: yellow;
 }
-#intro h3 {
-  font-size: 32px;
+
+.green_link {
+  color: rgb(128, 255, 0);
+  float: right;
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: color 1s;
 }
+
+.green_link:hover {
+  color: yellow;
+}
+
+#info_overlay {
+  background: rgba(255, 255, 255, 0.582);
+  display: none;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 9;
+}
+#pop_up {
+background: rgba(0, 0, 0, 0.6); 
+border: solid rgba(128, 255, 0);
+border-radius: 10px;
+display: none;
+left: 50%;
+padding: 0.5em;
+position: fixed;
+text-align: center;
+transform:translate(-50%, -50%) ;
+top: 50%;
+z-index: 10;
+}
+
+
 
 .box {
   align-items: center;
@@ -187,7 +242,9 @@ body {
   right: 2%;
   text-align: center;
 }
+
 /*Players List*/
+
 #players_list {
   border-radius: 6px;
   border-top: 1px solid #ffffff;
@@ -195,28 +252,38 @@ body {
   margin: 5px 0 0 0;
   padding-left: 0;
 }
+
+/*Rank tags*/
+
 .owner_tag {
   color: rgb(255, 0, 0);
 }
+
 .admin_tag {
   color: #53f9f9;
 }
+
 .mod_tag {
   color: #C84374;
 }
+
 .helper_tag {
-  color:#802C00;
+  color: #802C00;
 }
+
 .honor_tag {
   color: #F5CD3A;
 }
+
 /*Loading icon*/
+
 .lds-ellipsis {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 20px;
 }
+
 .lds-ellipsis div {
   position: absolute;
   top: 5px;
@@ -226,22 +293,27 @@ body {
   background: #fff;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
+
 .lds-ellipsis div:nth-child(1) {
   left: 8px;
   animation: lds-ellipsis1 0.6s infinite;
 }
+
 .lds-ellipsis div:nth-child(2) {
   left: 8px;
   animation: lds-ellipsis2 0.6s infinite;
 }
+
 .lds-ellipsis div:nth-child(3) {
   left: 32px;
   animation: lds-ellipsis2 0.6s infinite;
 }
+
 .lds-ellipsis div:nth-child(4) {
   left: 56px;
   animation: lds-ellipsis3 0.6s infinite;
 }
+
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -250,6 +322,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes lds-ellipsis3 {
   0% {
     transform: scale(1);
@@ -258,6 +331,7 @@ body {
     transform: scale(0);
   }
 }
+
 @keyframes lds-ellipsis2 {
   0% {
     transform: translate(0, 0);
@@ -267,9 +341,7 @@ body {
   }
 }
 
-
 #status_signal {
-  
   border-radius: 50%;
   height: 10px;
   margin-right: 4px;
@@ -425,7 +497,10 @@ body {
     padding-left: 0;
     padding-right: 0;
     width: 99%;
-    }
+  }
+  #pop_up {
+    width: 90vw;
+  }
   .box {
     padding: 0.5em 0 0.5em 0;
     width: 100%;
