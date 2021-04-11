@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
    /*Owners list*/
    const owners = ["Artuloda", "miguel"];
@@ -48,7 +48,14 @@ $(function() {
 
    function getServerStatus() {
       $.getJSON(statusUrl, function (statusInfo) {
-         //data is the JSON string
+         /*Code bellow forces status to appear as OFFLINE (during maintenance tasks etc)*/
+         $('#status_text').css('color', 'red');
+         $('#status_text').html('Offline');
+         $('#players_num').html(null);
+         playerList = [];
+         return false;
+
+         /*Normal code for displaying server status*/
          if (statusInfo.error) {
             $('#status_text').css('color', 'red');
             $('#status_text').html('Offline');
