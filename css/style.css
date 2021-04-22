@@ -255,11 +255,11 @@ z-index: 10;
 
 /*Rank tags*/
 
-.owner_tag {
+.staff_tag {
   color: rgb(255, 0, 0);
 }
 
-.admin_tag {
+.streamers_tag {
   color: #53f9f9;
 }
 
