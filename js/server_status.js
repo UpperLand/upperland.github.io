@@ -65,7 +65,7 @@ $(function () {
             playerList = [];
             return false;
          } else {
-            alarm = 1;
+            alarm = 0;
             $('#status_text').css('color', '#80ff00');
             $('#status_text').html('Online');
             $('#players_num').html('Jugadores online: ' + statusInfo.players.online);
