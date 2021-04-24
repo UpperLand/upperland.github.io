@@ -124,10 +124,10 @@ body {
     border: solid yellow;
   }
   25% {
-    border: solid red;
+    border: solid #772ce8;
   }
   25.05% {
-    border: solid red;
+    border: solid #772ce8;
   }
   100% {
     border: solid yellow;
@@ -139,10 +139,10 @@ body {
     color: yellow;
   }
   25% {
-    color: red;
+    color: #772ce8;
   }
   25.05% {
-    color: red;
+    color: r#772ce8;
   }
   100% {
     color: yellow;
@@ -188,6 +188,17 @@ body {
 .green_link:hover {
   color: yellow;
 }
+
+#kiri_link {
+  float:none;
+  font-style: italic;
+}
+#lean_link {
+  float:none;
+  font-style: italic;
+}
+
+
 
 #info_overlay {
   background: rgba(255, 255, 255, 0.795);

@@ -1,5 +1,6 @@
+ /* More info POP-UP. Temporary disabled
 $(document).ready(function () {
-    
+
     $("#info_overlay").fadeIn(500, function () {
         $("#pop_up").fadeIn(500, function () {
             
@@ -27,3 +28,4 @@ $(document).ready(function () {
     });
 
 });
+*/
