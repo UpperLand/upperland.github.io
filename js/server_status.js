@@ -67,7 +67,7 @@ $(function () {
          } else {
             alarm = 0;
             $('#status_text').css('color', '#80ff00');
-            $('#status_text').html('Online');
+            $('#status_text').html('Online (Streamers)');
             $('#players_num').html('Jugadores online: ' + statusInfo.players.online);
             /*Temporary disabled
             var players = statusInfo.players.sample.map(player => "<li id='" + player.name + "'>" + player.name + "</li>");
