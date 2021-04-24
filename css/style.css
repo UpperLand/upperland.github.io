@@ -190,12 +190,22 @@ body {
 }
 
 #kiri_link {
-  float:none;
-  font-style: italic;
+  color: rgb(128, 255, 0);
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: color 1s;
+}
+#kiri_link:hover {
+  color: yellow;
 }
 #lean_link {
-  float:none;
-  font-style: italic;
+  color: rgb(128, 255, 0);
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: color 1s;
+}
+#lean_link:hover {
+  color: yellow;
 }
 
 
